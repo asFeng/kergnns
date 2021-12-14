@@ -1,0 +1,428 @@
+2021-06-04 09:31:46,682 - __main__ - INFO - Log directory: save/IMDB-BINARY/cv0
+2021-06-04 09:31:48,483 - __main__ - INFO - in dim: 1
+2021-06-04 09:31:57,892 - __main__ - INFO - kergnn(
+  (dropout): Dropout(p=0.5, inplace=False)
+  (ker_layers): ModuleList(
+    (0): RW_layer(
+      (fc_in): Linear(in_features=1, out_features=16, bias=True)
+      (bn): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (dropout): Dropout(p=0.5, inplace=False)
+      (relu): ReLU()
+      (sigmoid): Sigmoid()
+    )
+  )
+  (batch_norms): ModuleList(
+    (0): BatchNorm1d(32, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  )
+  (linears_prediction): ModuleList(
+    (0): MLP(
+      (linear): Linear(in_features=1, out_features=2, bias=True)
+    )
+    (1): MLP(
+      (linear): Linear(in_features=32, out_features=2, bias=True)
+    )
+  )
+)
+2021-06-04 09:31:58,283 - __main__ - INFO - epoch:001 train_loss=11.36819 train_acc=0.48889 val_acc=0.50000 time=0.38620 test_acc=0.50000 
+2021-06-04 09:31:58,339 - __main__ - INFO - epoch:002 train_loss=7.52170 train_acc=0.51852 val_acc=0.50000 time=0.05294 
+2021-06-04 09:31:58,395 - __main__ - INFO - epoch:003 train_loss=5.40554 train_acc=0.49259 val_acc=0.52222 time=0.05302 
+2021-06-04 09:31:58,451 - __main__ - INFO - epoch:004 train_loss=3.03243 train_acc=0.49259 val_acc=0.51111 time=0.05317 
+2021-06-04 09:31:58,504 - __main__ - INFO - epoch:005 train_loss=1.90866 train_acc=0.47778 val_acc=0.43333 time=0.05303 
+2021-06-04 09:31:58,560 - __main__ - INFO - epoch:006 train_loss=1.32231 train_acc=0.46543 val_acc=0.47778 time=0.05310 test_acc=0.50000 
+2021-06-04 09:31:58,614 - __main__ - INFO - epoch:007 train_loss=1.10127 train_acc=0.49383 val_acc=0.45556 time=0.05300 
+2021-06-04 09:31:58,666 - __main__ - INFO - epoch:008 train_loss=0.99044 train_acc=0.45185 val_acc=0.42222 time=0.05179 
+2021-06-04 09:31:58,718 - __main__ - INFO - epoch:009 train_loss=0.91896 train_acc=0.44321 val_acc=0.45556 time=0.05153 
+2021-06-04 09:31:58,770 - __main__ - INFO - epoch:010 train_loss=0.82972 train_acc=0.50000 val_acc=0.47778 time=0.05166 
+2021-06-04 09:31:58,825 - __main__ - INFO - epoch:011 train_loss=0.82077 train_acc=0.48519 val_acc=0.44444 time=0.05173 test_acc=0.42000 
+2021-06-04 09:31:58,876 - __main__ - INFO - epoch:012 train_loss=0.80477 train_acc=0.49630 val_acc=0.46667 time=0.05121 
+2021-06-04 09:31:58,928 - __main__ - INFO - epoch:013 train_loss=0.79457 train_acc=0.49012 val_acc=0.44444 time=0.05086 
+2021-06-04 09:31:58,979 - __main__ - INFO - epoch:014 train_loss=0.78634 train_acc=0.49506 val_acc=0.40000 time=0.05105 
+2021-06-04 09:31:59,031 - __main__ - INFO - epoch:015 train_loss=0.80329 train_acc=0.49136 val_acc=0.45556 time=0.05128 
+2021-06-04 09:31:59,086 - __main__ - INFO - epoch:016 train_loss=0.74085 train_acc=0.50741 val_acc=0.48889 time=0.05175 test_acc=0.51000 
+2021-06-04 09:31:59,137 - __main__ - INFO - epoch:017 train_loss=0.73854 train_acc=0.51481 val_acc=0.46667 time=0.05114 
+2021-06-04 09:31:59,189 - __main__ - INFO - epoch:018 train_loss=0.75372 train_acc=0.51481 val_acc=0.48889 time=0.05107 
+2021-06-04 09:31:59,240 - __main__ - INFO - epoch:019 train_loss=0.74286 train_acc=0.53086 val_acc=0.51111 time=0.05133 
+2021-06-04 09:31:59,292 - __main__ - INFO - epoch:020 train_loss=0.73750 train_acc=0.53210 val_acc=0.61111 time=0.05129 
+2021-06-04 09:31:59,349 - __main__ - INFO - epoch:021 train_loss=0.72401 train_acc=0.54198 val_acc=0.62222 time=0.05101 test_acc=0.60000 
+2021-06-04 09:31:59,403 - __main__ - INFO - epoch:022 train_loss=0.70467 train_acc=0.55802 val_acc=0.63333 time=0.05134 
+2021-06-04 09:31:59,457 - __main__ - INFO - epoch:023 train_loss=0.72439 train_acc=0.52099 val_acc=0.64444 time=0.05127 
+2021-06-04 09:31:59,510 - __main__ - INFO - epoch:024 train_loss=0.72008 train_acc=0.54198 val_acc=0.64444 time=0.05102 
+2021-06-04 09:31:59,564 - __main__ - INFO - epoch:025 train_loss=0.71661 train_acc=0.52469 val_acc=0.61111 time=0.05081 
+2021-06-04 09:31:59,618 - __main__ - INFO - epoch:026 train_loss=0.69800 train_acc=0.54815 val_acc=0.67778 time=0.05124 test_acc=0.64000 
+2021-06-04 09:31:59,672 - __main__ - INFO - epoch:027 train_loss=0.68327 train_acc=0.55185 val_acc=0.61111 time=0.05112 
+2021-06-04 09:31:59,723 - __main__ - INFO - epoch:028 train_loss=0.69603 train_acc=0.52346 val_acc=0.52222 time=0.05120 
+2021-06-04 09:31:59,775 - __main__ - INFO - epoch:029 train_loss=0.67931 train_acc=0.54691 val_acc=0.41111 time=0.05128 
+2021-06-04 09:31:59,827 - __main__ - INFO - epoch:030 train_loss=0.68765 train_acc=0.54815 val_acc=0.50000 time=0.05143 
+2021-06-04 09:31:59,881 - __main__ - INFO - epoch:031 train_loss=0.65976 train_acc=0.56543 val_acc=0.47778 time=0.05131 test_acc=0.50000 
+2021-06-04 09:31:59,933 - __main__ - INFO - epoch:032 train_loss=0.65520 train_acc=0.60741 val_acc=0.52222 time=0.05138 
+2021-06-04 09:31:59,985 - __main__ - INFO - epoch:033 train_loss=0.64904 train_acc=0.59012 val_acc=0.66667 time=0.05138 
+2021-06-04 09:32:00,037 - __main__ - INFO - epoch:034 train_loss=0.66389 train_acc=0.58519 val_acc=0.66667 time=0.05159 
+2021-06-04 09:32:00,088 - __main__ - INFO - epoch:035 train_loss=0.65504 train_acc=0.58519 val_acc=0.56667 time=0.05104 
+2021-06-04 09:32:00,142 - __main__ - INFO - epoch:036 train_loss=0.63972 train_acc=0.59506 val_acc=0.55556 time=0.05098 test_acc=0.59000 
+2021-06-04 09:32:00,194 - __main__ - INFO - epoch:037 train_loss=0.64684 train_acc=0.60988 val_acc=0.64444 time=0.05146 
+2021-06-04 09:32:00,246 - __main__ - INFO - epoch:038 train_loss=0.64861 train_acc=0.57778 val_acc=0.58889 time=0.05168 
+2021-06-04 09:32:00,298 - __main__ - INFO - epoch:039 train_loss=0.65095 train_acc=0.60370 val_acc=0.68889 time=0.05133 
+2021-06-04 09:32:00,352 - __main__ - INFO - epoch:040 train_loss=0.65596 train_acc=0.59383 val_acc=0.71111 time=0.05141 
+2021-06-04 09:32:00,409 - __main__ - INFO - epoch:041 train_loss=0.66530 train_acc=0.57407 val_acc=0.70000 time=0.05133 test_acc=0.67000 
+2021-06-04 09:32:00,461 - __main__ - INFO - epoch:042 train_loss=0.64233 train_acc=0.60741 val_acc=0.66667 time=0.05115 
+2021-06-04 09:32:00,512 - __main__ - INFO - epoch:043 train_loss=0.65669 train_acc=0.58765 val_acc=0.57778 time=0.05122 
+2021-06-04 09:32:00,564 - __main__ - INFO - epoch:044 train_loss=0.64224 train_acc=0.58642 val_acc=0.66667 time=0.05149 
+2021-06-04 09:32:00,616 - __main__ - INFO - epoch:045 train_loss=0.64366 train_acc=0.59877 val_acc=0.68889 time=0.05114 
+2021-06-04 09:32:00,670 - __main__ - INFO - epoch:046 train_loss=0.66105 train_acc=0.56049 val_acc=0.63333 time=0.05111 test_acc=0.70000 
+2021-06-04 09:32:00,721 - __main__ - INFO - epoch:047 train_loss=0.64272 train_acc=0.60617 val_acc=0.67778 time=0.05117 
+2021-06-04 09:32:00,773 - __main__ - INFO - epoch:048 train_loss=0.64723 train_acc=0.58148 val_acc=0.67778 time=0.05132 
+2021-06-04 09:32:00,825 - __main__ - INFO - epoch:049 train_loss=0.63916 train_acc=0.60617 val_acc=0.72222 time=0.05108 
+2021-06-04 09:32:00,879 - __main__ - INFO - epoch:050 train_loss=0.63281 train_acc=0.59753 val_acc=0.68889 time=0.05141 
+2021-06-04 09:32:00,933 - __main__ - INFO - epoch:051 train_loss=0.64976 train_acc=0.58519 val_acc=0.72222 time=0.05136 test_acc=0.71000 
+2021-06-04 09:32:00,987 - __main__ - INFO - epoch:052 train_loss=0.63950 train_acc=0.62222 val_acc=0.68889 time=0.05108 
+2021-06-04 09:32:01,040 - __main__ - INFO - epoch:053 train_loss=0.64591 train_acc=0.62346 val_acc=0.68889 time=0.05253 
+2021-06-04 09:32:01,091 - __main__ - INFO - epoch:054 train_loss=0.65025 train_acc=0.58642 val_acc=0.67778 time=0.05097 
+2021-06-04 09:32:01,142 - __main__ - INFO - epoch:055 train_loss=0.62955 train_acc=0.61975 val_acc=0.68889 time=0.05104 
+2021-06-04 09:32:01,197 - __main__ - INFO - epoch:056 train_loss=0.64969 train_acc=0.60864 val_acc=0.67778 time=0.05092 test_acc=0.67000 
+2021-06-04 09:32:01,248 - __main__ - INFO - epoch:057 train_loss=0.63798 train_acc=0.61975 val_acc=0.68889 time=0.05071 
+2021-06-04 09:32:01,299 - __main__ - INFO - epoch:058 train_loss=0.63519 train_acc=0.60123 val_acc=0.71111 time=0.05081 
+2021-06-04 09:32:01,350 - __main__ - INFO - epoch:059 train_loss=0.63603 train_acc=0.62222 val_acc=0.72222 time=0.05104 
+2021-06-04 09:32:01,404 - __main__ - INFO - epoch:060 train_loss=0.63743 train_acc=0.61852 val_acc=0.67778 time=0.05111 
+2021-06-04 09:32:01,458 - __main__ - INFO - epoch:061 train_loss=0.64086 train_acc=0.60494 val_acc=0.70000 time=0.05115 test_acc=0.68000 
+2021-06-04 09:32:01,510 - __main__ - INFO - epoch:062 train_loss=0.62494 train_acc=0.63086 val_acc=0.72222 time=0.05087 
+2021-06-04 09:32:01,564 - __main__ - INFO - epoch:063 train_loss=0.64253 train_acc=0.59012 val_acc=0.63333 time=0.05151 
+2021-06-04 09:32:01,615 - __main__ - INFO - epoch:064 train_loss=0.63987 train_acc=0.61111 val_acc=0.68889 time=0.05131 
+2021-06-04 09:32:01,667 - __main__ - INFO - epoch:065 train_loss=0.64135 train_acc=0.60988 val_acc=0.67778 time=0.05111 
+2021-06-04 09:32:01,721 - __main__ - INFO - epoch:066 train_loss=0.63448 train_acc=0.61852 val_acc=0.66667 time=0.05126 test_acc=0.69000 
+2021-06-04 09:32:01,773 - __main__ - INFO - epoch:067 train_loss=0.63320 train_acc=0.60988 val_acc=0.70000 time=0.05106 
+2021-06-04 09:32:01,824 - __main__ - INFO - epoch:068 train_loss=0.63077 train_acc=0.61481 val_acc=0.67778 time=0.05120 
+2021-06-04 09:32:01,876 - __main__ - INFO - epoch:069 train_loss=0.63115 train_acc=0.60494 val_acc=0.68889 time=0.05125 
+2021-06-04 09:32:01,928 - __main__ - INFO - epoch:070 train_loss=0.62863 train_acc=0.62469 val_acc=0.68889 time=0.05150 
+2021-06-04 09:32:01,982 - __main__ - INFO - epoch:071 train_loss=0.64287 train_acc=0.61235 val_acc=0.72222 time=0.05131 test_acc=0.72000 
+2021-06-04 09:32:02,036 - __main__ - INFO - epoch:072 train_loss=0.63450 train_acc=0.60864 val_acc=0.68889 time=0.05121 
+2021-06-04 09:32:02,088 - __main__ - INFO - epoch:073 train_loss=0.64602 train_acc=0.61975 val_acc=0.70000 time=0.05092 
+2021-06-04 09:32:02,140 - __main__ - INFO - epoch:074 train_loss=0.63065 train_acc=0.61728 val_acc=0.67778 time=0.05158 
+2021-06-04 09:32:02,191 - __main__ - INFO - epoch:075 train_loss=0.64081 train_acc=0.59383 val_acc=0.67778 time=0.05110 
+2021-06-04 09:32:02,245 - __main__ - INFO - epoch:076 train_loss=0.64075 train_acc=0.63333 val_acc=0.73333 time=0.05100 test_acc=0.76000 
+2021-06-04 09:32:02,299 - __main__ - INFO - epoch:077 train_loss=0.63433 train_acc=0.60123 val_acc=0.58889 time=0.05138 
+2021-06-04 09:32:02,351 - __main__ - INFO - epoch:078 train_loss=0.62624 train_acc=0.63210 val_acc=0.67778 time=0.05116 
+2021-06-04 09:32:02,402 - __main__ - INFO - epoch:079 train_loss=0.63307 train_acc=0.65185 val_acc=0.66667 time=0.05094 
+2021-06-04 09:32:02,453 - __main__ - INFO - epoch:080 train_loss=0.62572 train_acc=0.62963 val_acc=0.73333 time=0.05089 
+2021-06-04 09:32:02,510 - __main__ - INFO - epoch:081 train_loss=0.62253 train_acc=0.63827 val_acc=0.68889 time=0.05106 test_acc=0.67000 
+2021-06-04 09:32:02,561 - __main__ - INFO - epoch:082 train_loss=0.62805 train_acc=0.61975 val_acc=0.68889 time=0.05130 
+2021-06-04 09:32:02,613 - __main__ - INFO - epoch:083 train_loss=0.64054 train_acc=0.61728 val_acc=0.72222 time=0.05118 
+2021-06-04 09:32:02,664 - __main__ - INFO - epoch:084 train_loss=0.63345 train_acc=0.64074 val_acc=0.68889 time=0.05097 
+2021-06-04 09:32:02,715 - __main__ - INFO - epoch:085 train_loss=0.63674 train_acc=0.62222 val_acc=0.70000 time=0.05078 
+2021-06-04 09:32:02,770 - __main__ - INFO - epoch:086 train_loss=0.63586 train_acc=0.62963 val_acc=0.68889 time=0.05109 test_acc=0.65000 
+2021-06-04 09:32:02,821 - __main__ - INFO - epoch:087 train_loss=0.64079 train_acc=0.62346 val_acc=0.68889 time=0.05084 
+2021-06-04 09:32:02,872 - __main__ - INFO - epoch:088 train_loss=0.64202 train_acc=0.61605 val_acc=0.68889 time=0.05104 
+2021-06-04 09:32:02,923 - __main__ - INFO - epoch:089 train_loss=0.65285 train_acc=0.62346 val_acc=0.73333 time=0.05072 
+2021-06-04 09:32:02,978 - __main__ - INFO - epoch:090 train_loss=0.63068 train_acc=0.61605 val_acc=0.70000 time=0.05187 
+2021-06-04 09:32:03,032 - __main__ - INFO - epoch:091 train_loss=0.63613 train_acc=0.62963 val_acc=0.68889 time=0.05091 test_acc=0.69000 
+2021-06-04 09:32:03,083 - __main__ - INFO - epoch:092 train_loss=0.63399 train_acc=0.61111 val_acc=0.67778 time=0.05057 
+2021-06-04 09:32:03,134 - __main__ - INFO - epoch:093 train_loss=0.63428 train_acc=0.60617 val_acc=0.67778 time=0.05068 
+2021-06-04 09:32:03,185 - __main__ - INFO - epoch:094 train_loss=0.63261 train_acc=0.63210 val_acc=0.61111 time=0.05093 
+2021-06-04 09:32:03,236 - __main__ - INFO - epoch:095 train_loss=0.63879 train_acc=0.65062 val_acc=0.67778 time=0.05056 
+2021-06-04 09:32:03,290 - __main__ - INFO - epoch:096 train_loss=0.63502 train_acc=0.64074 val_acc=0.63333 time=0.05065 test_acc=0.64000 
+2021-06-04 09:32:03,341 - __main__ - INFO - epoch:097 train_loss=0.63205 train_acc=0.62840 val_acc=0.68889 time=0.05041 
+2021-06-04 09:32:03,391 - __main__ - INFO - epoch:098 train_loss=0.63293 train_acc=0.63210 val_acc=0.72222 time=0.05035 
+2021-06-04 09:32:03,442 - __main__ - INFO - epoch:099 train_loss=0.63145 train_acc=0.64444 val_acc=0.66667 time=0.05055 
+2021-06-04 09:32:03,493 - __main__ - INFO - epoch:100 train_loss=0.63325 train_acc=0.63580 val_acc=0.68889 time=0.05045 
+2021-06-04 09:32:03,547 - __main__ - INFO - epoch:101 train_loss=0.63814 train_acc=0.63580 val_acc=0.68889 time=0.05067 test_acc=0.67000 
+2021-06-04 09:32:03,598 - __main__ - INFO - epoch:102 train_loss=0.63850 train_acc=0.63210 val_acc=0.68889 time=0.05044 
+2021-06-04 09:32:03,649 - __main__ - INFO - epoch:103 train_loss=0.63368 train_acc=0.63580 val_acc=0.71111 time=0.05068 
+2021-06-04 09:32:03,700 - __main__ - INFO - epoch:104 train_loss=0.63945 train_acc=0.61605 val_acc=0.68889 time=0.05033 
+2021-06-04 09:32:03,750 - __main__ - INFO - epoch:105 train_loss=0.63429 train_acc=0.63580 val_acc=0.68889 time=0.05022 
+2021-06-04 09:32:03,804 - __main__ - INFO - epoch:106 train_loss=0.62967 train_acc=0.64568 val_acc=0.68889 time=0.05022 test_acc=0.68000 
+2021-06-04 09:32:03,854 - __main__ - INFO - epoch:107 train_loss=0.64264 train_acc=0.62099 val_acc=0.74444 time=0.05008 
+2021-06-04 09:32:03,907 - __main__ - INFO - epoch:108 train_loss=0.62879 train_acc=0.63580 val_acc=0.68889 time=0.05069 
+2021-06-04 09:32:03,957 - __main__ - INFO - epoch:109 train_loss=0.62495 train_acc=0.65309 val_acc=0.67778 time=0.05029 
+2021-06-04 09:32:04,008 - __main__ - INFO - epoch:110 train_loss=0.63277 train_acc=0.62593 val_acc=0.70000 time=0.05050 
+2021-06-04 09:32:04,062 - __main__ - INFO - epoch:111 train_loss=0.63642 train_acc=0.63457 val_acc=0.70000 time=0.05059 test_acc=0.73000 
+2021-06-04 09:32:04,113 - __main__ - INFO - epoch:112 train_loss=0.62745 train_acc=0.64198 val_acc=0.68889 time=0.05056 
+2021-06-04 09:32:04,164 - __main__ - INFO - epoch:113 train_loss=0.63639 train_acc=0.64815 val_acc=0.67778 time=0.05061 
+2021-06-04 09:32:04,215 - __main__ - INFO - epoch:114 train_loss=0.62553 train_acc=0.62469 val_acc=0.66667 time=0.05045 
+2021-06-04 09:32:04,265 - __main__ - INFO - epoch:115 train_loss=0.62128 train_acc=0.64938 val_acc=0.67778 time=0.05044 
+2021-06-04 09:32:04,319 - __main__ - INFO - epoch:116 train_loss=0.63353 train_acc=0.61481 val_acc=0.68889 time=0.05043 test_acc=0.69000 
+2021-06-04 09:32:04,370 - __main__ - INFO - epoch:117 train_loss=0.61811 train_acc=0.66049 val_acc=0.66667 time=0.05043 
+2021-06-04 09:32:04,420 - __main__ - INFO - epoch:118 train_loss=0.63372 train_acc=0.62346 val_acc=0.67778 time=0.05016 
+2021-06-04 09:32:04,471 - __main__ - INFO - epoch:119 train_loss=0.62744 train_acc=0.64691 val_acc=0.66667 time=0.05017 
+2021-06-04 09:32:04,522 - __main__ - INFO - epoch:120 train_loss=0.63970 train_acc=0.64568 val_acc=0.68889 time=0.05078 
+2021-06-04 09:32:04,576 - __main__ - INFO - epoch:121 train_loss=0.62559 train_acc=0.64691 val_acc=0.72222 time=0.05113 test_acc=0.72000 
+2021-06-04 09:32:04,628 - __main__ - INFO - epoch:122 train_loss=0.62494 train_acc=0.63086 val_acc=0.74444 time=0.05111 
+2021-06-04 09:32:04,680 - __main__ - INFO - epoch:123 train_loss=0.61656 train_acc=0.64815 val_acc=0.74444 time=0.05081 
+2021-06-04 09:32:04,733 - __main__ - INFO - epoch:124 train_loss=0.63328 train_acc=0.61605 val_acc=0.68889 time=0.05070 
+2021-06-04 09:32:04,784 - __main__ - INFO - epoch:125 train_loss=0.64314 train_acc=0.60494 val_acc=0.68889 time=0.05050 
+2021-06-04 09:32:04,838 - __main__ - INFO - epoch:126 train_loss=0.61863 train_acc=0.65802 val_acc=0.68889 time=0.05099 test_acc=0.70000 
+2021-06-04 09:32:04,889 - __main__ - INFO - epoch:127 train_loss=0.62944 train_acc=0.62840 val_acc=0.68889 time=0.05066 
+2021-06-04 09:32:04,940 - __main__ - INFO - epoch:128 train_loss=0.62198 train_acc=0.62840 val_acc=0.67778 time=0.05058 
+2021-06-04 09:32:04,991 - __main__ - INFO - epoch:129 train_loss=0.62427 train_acc=0.63333 val_acc=0.68889 time=0.05056 
+2021-06-04 09:32:05,042 - __main__ - INFO - epoch:130 train_loss=0.63739 train_acc=0.64691 val_acc=0.73333 time=0.05067 
+2021-06-04 09:32:05,095 - __main__ - INFO - epoch:131 train_loss=0.62097 train_acc=0.66173 val_acc=0.67778 time=0.05056 test_acc=0.71000 
+2021-06-04 09:32:05,146 - __main__ - INFO - epoch:132 train_loss=0.63357 train_acc=0.63086 val_acc=0.71111 time=0.05045 
+2021-06-04 09:32:05,197 - __main__ - INFO - epoch:133 train_loss=0.63622 train_acc=0.63210 val_acc=0.72222 time=0.05061 
+2021-06-04 09:32:05,248 - __main__ - INFO - epoch:134 train_loss=0.62051 train_acc=0.62346 val_acc=0.68889 time=0.05047 
+2021-06-04 09:32:05,299 - __main__ - INFO - epoch:135 train_loss=0.63270 train_acc=0.64568 val_acc=0.73333 time=0.05056 
+2021-06-04 09:32:05,352 - __main__ - INFO - epoch:136 train_loss=0.62579 train_acc=0.64938 val_acc=0.66667 time=0.05040 test_acc=0.69000 
+2021-06-04 09:32:05,403 - __main__ - INFO - epoch:137 train_loss=0.63627 train_acc=0.62716 val_acc=0.66667 time=0.05053 
+2021-06-04 09:32:05,454 - __main__ - INFO - epoch:138 train_loss=0.62082 train_acc=0.64444 val_acc=0.68889 time=0.05026 
+2021-06-04 09:32:05,505 - __main__ - INFO - epoch:139 train_loss=0.62308 train_acc=0.66049 val_acc=0.67778 time=0.05071 
+2021-06-04 09:32:05,556 - __main__ - INFO - epoch:140 train_loss=0.62355 train_acc=0.62346 val_acc=0.67778 time=0.05073 
+2021-06-04 09:32:05,610 - __main__ - INFO - epoch:141 train_loss=0.61499 train_acc=0.65802 val_acc=0.67778 time=0.05098 test_acc=0.68000 
+2021-06-04 09:32:05,661 - __main__ - INFO - epoch:142 train_loss=0.62670 train_acc=0.64321 val_acc=0.67778 time=0.05093 
+2021-06-04 09:32:05,712 - __main__ - INFO - epoch:143 train_loss=0.62969 train_acc=0.63457 val_acc=0.68889 time=0.05086 
+2021-06-04 09:32:05,764 - __main__ - INFO - epoch:144 train_loss=0.63899 train_acc=0.61235 val_acc=0.72222 time=0.05124 
+2021-06-04 09:32:05,815 - __main__ - INFO - epoch:145 train_loss=0.61853 train_acc=0.64198 val_acc=0.68889 time=0.05075 
+2021-06-04 09:32:05,869 - __main__ - INFO - epoch:146 train_loss=0.61807 train_acc=0.63951 val_acc=0.67778 time=0.05069 test_acc=0.68000 
+2021-06-04 09:32:05,920 - __main__ - INFO - epoch:147 train_loss=0.63821 train_acc=0.62346 val_acc=0.68889 time=0.05077 
+2021-06-04 09:32:05,972 - __main__ - INFO - epoch:148 train_loss=0.63072 train_acc=0.60741 val_acc=0.70000 time=0.05098 
+2021-06-04 09:32:06,023 - __main__ - INFO - epoch:149 train_loss=0.63439 train_acc=0.61728 val_acc=0.70000 time=0.05097 
+2021-06-04 09:32:06,074 - __main__ - INFO - epoch:150 train_loss=0.63231 train_acc=0.63086 val_acc=0.66667 time=0.05089 
+2021-06-04 09:32:06,128 - __main__ - INFO - epoch:151 train_loss=0.62759 train_acc=0.64568 val_acc=0.67778 time=0.05087 test_acc=0.70000 
+2021-06-04 09:32:06,180 - __main__ - INFO - epoch:152 train_loss=0.62352 train_acc=0.62593 val_acc=0.68889 time=0.05140 
+2021-06-04 09:32:06,232 - __main__ - INFO - epoch:153 train_loss=0.64258 train_acc=0.63580 val_acc=0.67778 time=0.05113 
+2021-06-04 09:32:06,283 - __main__ - INFO - epoch:154 train_loss=0.62753 train_acc=0.64568 val_acc=0.67778 time=0.05098 
+2021-06-04 09:32:06,335 - __main__ - INFO - epoch:155 train_loss=0.63876 train_acc=0.62469 val_acc=0.67778 time=0.05105 
+2021-06-04 09:32:06,389 - __main__ - INFO - epoch:156 train_loss=0.62592 train_acc=0.63704 val_acc=0.67778 time=0.05106 test_acc=0.69000 
+2021-06-04 09:32:06,440 - __main__ - INFO - epoch:157 train_loss=0.60970 train_acc=0.65062 val_acc=0.68889 time=0.05102 
+2021-06-04 09:32:06,492 - __main__ - INFO - epoch:158 train_loss=0.62168 train_acc=0.63704 val_acc=0.67778 time=0.05135 
+2021-06-04 09:32:06,544 - __main__ - INFO - epoch:159 train_loss=0.62550 train_acc=0.63457 val_acc=0.66667 time=0.05136 
+2021-06-04 09:32:06,595 - __main__ - INFO - epoch:160 train_loss=0.62385 train_acc=0.65802 val_acc=0.66667 time=0.05137 
+2021-06-04 09:32:06,650 - __main__ - INFO - epoch:161 train_loss=0.63393 train_acc=0.63086 val_acc=0.67778 time=0.05126 test_acc=0.69000 
+2021-06-04 09:32:06,701 - __main__ - INFO - epoch:162 train_loss=0.62330 train_acc=0.65062 val_acc=0.68889 time=0.05104 
+2021-06-04 09:32:06,753 - __main__ - INFO - epoch:163 train_loss=0.61282 train_acc=0.65062 val_acc=0.68889 time=0.05090 
+2021-06-04 09:32:06,803 - __main__ - INFO - epoch:164 train_loss=0.63231 train_acc=0.63210 val_acc=0.68889 time=0.05047 
+2021-06-04 09:32:06,855 - __main__ - INFO - epoch:165 train_loss=0.61899 train_acc=0.64198 val_acc=0.68889 time=0.05091 
+2021-06-04 09:32:06,909 - __main__ - INFO - epoch:166 train_loss=0.62620 train_acc=0.64938 val_acc=0.66667 time=0.05055 test_acc=0.69000 
+2021-06-04 09:32:06,960 - __main__ - INFO - epoch:167 train_loss=0.62551 train_acc=0.64691 val_acc=0.66667 time=0.05075 
+2021-06-04 09:32:07,011 - __main__ - INFO - epoch:168 train_loss=0.63441 train_acc=0.62099 val_acc=0.66667 time=0.05072 
+2021-06-04 09:32:07,062 - __main__ - INFO - epoch:169 train_loss=0.61792 train_acc=0.66420 val_acc=0.66667 time=0.05075 
+2021-06-04 09:32:07,113 - __main__ - INFO - epoch:170 train_loss=0.62877 train_acc=0.62346 val_acc=0.67778 time=0.05060 
+2021-06-04 09:32:07,167 - __main__ - INFO - epoch:171 train_loss=0.62333 train_acc=0.62593 val_acc=0.67778 time=0.05060 test_acc=0.71000 
+2021-06-04 09:32:07,218 - __main__ - INFO - epoch:172 train_loss=0.61826 train_acc=0.64815 val_acc=0.67778 time=0.05035 
+2021-06-04 09:32:07,268 - __main__ - INFO - epoch:173 train_loss=0.62241 train_acc=0.63333 val_acc=0.68889 time=0.05034 
+2021-06-04 09:32:07,319 - __main__ - INFO - epoch:174 train_loss=0.61426 train_acc=0.64074 val_acc=0.68889 time=0.05024 
+2021-06-04 09:32:07,370 - __main__ - INFO - epoch:175 train_loss=0.62679 train_acc=0.64815 val_acc=0.66667 time=0.05056 
+2021-06-04 09:32:07,423 - __main__ - INFO - epoch:176 train_loss=0.63245 train_acc=0.61111 val_acc=0.68889 time=0.05038 test_acc=0.69000 
+2021-06-04 09:32:07,474 - __main__ - INFO - epoch:177 train_loss=0.63148 train_acc=0.63580 val_acc=0.66667 time=0.05031 
+2021-06-04 09:32:07,525 - __main__ - INFO - epoch:178 train_loss=0.62384 train_acc=0.64198 val_acc=0.68889 time=0.05056 
+2021-06-04 09:32:07,576 - __main__ - INFO - epoch:179 train_loss=0.62077 train_acc=0.64074 val_acc=0.67778 time=0.05066 
+2021-06-04 09:32:07,627 - __main__ - INFO - epoch:180 train_loss=0.62147 train_acc=0.63951 val_acc=0.65556 time=0.05083 
+2021-06-04 09:32:07,681 - __main__ - INFO - epoch:181 train_loss=0.63577 train_acc=0.63704 val_acc=0.66667 time=0.05062 test_acc=0.69000 
+2021-06-04 09:32:07,732 - __main__ - INFO - epoch:182 train_loss=0.62718 train_acc=0.61481 val_acc=0.67778 time=0.05066 
+2021-06-04 09:32:07,783 - __main__ - INFO - epoch:183 train_loss=0.62762 train_acc=0.64938 val_acc=0.67778 time=0.05075 
+2021-06-04 09:32:07,835 - __main__ - INFO - epoch:184 train_loss=0.62753 train_acc=0.62099 val_acc=0.67778 time=0.05089 
+2021-06-04 09:32:07,887 - __main__ - INFO - epoch:185 train_loss=0.61850 train_acc=0.65185 val_acc=0.66667 time=0.05129 
+2021-06-04 09:32:07,941 - __main__ - INFO - epoch:186 train_loss=0.63243 train_acc=0.62963 val_acc=0.68889 time=0.05093 test_acc=0.69000 
+2021-06-04 09:32:07,992 - __main__ - INFO - epoch:187 train_loss=0.61867 train_acc=0.60617 val_acc=0.68889 time=0.05123 
+2021-06-04 09:32:08,044 - __main__ - INFO - epoch:188 train_loss=0.61572 train_acc=0.65556 val_acc=0.67778 time=0.05107 
+2021-06-04 09:32:08,095 - __main__ - INFO - epoch:189 train_loss=0.62356 train_acc=0.65802 val_acc=0.68889 time=0.05103 
+2021-06-04 09:32:08,147 - __main__ - INFO - epoch:190 train_loss=0.62696 train_acc=0.65926 val_acc=0.64444 time=0.05122 
+2021-06-04 09:32:08,200 - __main__ - INFO - epoch:191 train_loss=0.62410 train_acc=0.63951 val_acc=0.64444 time=0.05030 test_acc=0.69000 
+2021-06-04 09:32:08,251 - __main__ - INFO - epoch:192 train_loss=0.62355 train_acc=0.64568 val_acc=0.65556 time=0.05068 
+2021-06-04 09:32:08,302 - __main__ - INFO - epoch:193 train_loss=0.63606 train_acc=0.61235 val_acc=0.66667 time=0.05049 
+2021-06-04 09:32:08,353 - __main__ - INFO - epoch:194 train_loss=0.61054 train_acc=0.65185 val_acc=0.65556 time=0.05071 
+2021-06-04 09:32:08,404 - __main__ - INFO - epoch:195 train_loss=0.62928 train_acc=0.63704 val_acc=0.67778 time=0.05050 
+2021-06-04 09:32:08,457 - __main__ - INFO - epoch:196 train_loss=0.62622 train_acc=0.63827 val_acc=0.67778 time=0.05044 test_acc=0.70000 
+2021-06-04 09:32:08,508 - __main__ - INFO - epoch:197 train_loss=0.62962 train_acc=0.62222 val_acc=0.65556 time=0.05030 
+2021-06-04 09:32:08,559 - __main__ - INFO - epoch:198 train_loss=0.62045 train_acc=0.64568 val_acc=0.65556 time=0.05046 
+2021-06-04 09:32:08,610 - __main__ - INFO - epoch:199 train_loss=0.62015 train_acc=0.65185 val_acc=0.67778 time=0.05054 
+2021-06-04 09:32:08,661 - __main__ - INFO - epoch:200 train_loss=0.62041 train_acc=0.66543 val_acc=0.67778 time=0.05058 
+2021-06-04 09:32:08,714 - __main__ - INFO - epoch:201 train_loss=0.62442 train_acc=0.66543 val_acc=0.66667 time=0.05031 test_acc=0.70000 
+2021-06-04 09:32:08,765 - __main__ - INFO - epoch:202 train_loss=0.62405 train_acc=0.66296 val_acc=0.67778 time=0.05035 
+2021-06-04 09:32:08,816 - __main__ - INFO - epoch:203 train_loss=0.61989 train_acc=0.65556 val_acc=0.67778 time=0.05047 
+2021-06-04 09:32:08,867 - __main__ - INFO - epoch:204 train_loss=0.63491 train_acc=0.65926 val_acc=0.66667 time=0.05058 
+2021-06-04 09:32:08,918 - __main__ - INFO - epoch:205 train_loss=0.62731 train_acc=0.65926 val_acc=0.70000 time=0.05059 
+2021-06-04 09:32:08,971 - __main__ - INFO - epoch:206 train_loss=0.62835 train_acc=0.65062 val_acc=0.66667 time=0.05047 test_acc=0.68000 
+2021-06-04 09:32:09,022 - __main__ - INFO - epoch:207 train_loss=0.61598 train_acc=0.66049 val_acc=0.66667 time=0.05027 
+2021-06-04 09:32:09,073 - __main__ - INFO - epoch:208 train_loss=0.63453 train_acc=0.63086 val_acc=0.66667 time=0.05067 
+2021-06-04 09:32:09,124 - __main__ - INFO - epoch:209 train_loss=0.62790 train_acc=0.65432 val_acc=0.67778 time=0.05066 
+2021-06-04 09:32:09,175 - __main__ - INFO - epoch:210 train_loss=0.61916 train_acc=0.66049 val_acc=0.67778 time=0.05054 
+2021-06-04 09:32:09,229 - __main__ - INFO - epoch:211 train_loss=0.61510 train_acc=0.64444 val_acc=0.66667 time=0.05057 test_acc=0.68000 
+2021-06-04 09:32:09,279 - __main__ - INFO - epoch:212 train_loss=0.61376 train_acc=0.67037 val_acc=0.67778 time=0.05041 
+2021-06-04 09:32:09,331 - __main__ - INFO - epoch:213 train_loss=0.63123 train_acc=0.65556 val_acc=0.67778 time=0.05095 
+2021-06-04 09:32:09,381 - __main__ - INFO - epoch:214 train_loss=0.63472 train_acc=0.65185 val_acc=0.67778 time=0.05014 
+2021-06-04 09:32:09,432 - __main__ - INFO - epoch:215 train_loss=0.63087 train_acc=0.62099 val_acc=0.67778 time=0.05005 
+2021-06-04 09:32:09,486 - __main__ - INFO - epoch:216 train_loss=0.62225 train_acc=0.63086 val_acc=0.65556 time=0.05080 test_acc=0.70000 
+2021-06-04 09:32:09,537 - __main__ - INFO - epoch:217 train_loss=0.62642 train_acc=0.64815 val_acc=0.68889 time=0.05069 
+2021-06-04 09:32:09,588 - __main__ - INFO - epoch:218 train_loss=0.61622 train_acc=0.63457 val_acc=0.67778 time=0.05068 
+2021-06-04 09:32:09,639 - __main__ - INFO - epoch:219 train_loss=0.62667 train_acc=0.64444 val_acc=0.67778 time=0.05071 
+2021-06-04 09:32:09,690 - __main__ - INFO - epoch:220 train_loss=0.62475 train_acc=0.65185 val_acc=0.67778 time=0.05066 
+2021-06-04 09:32:09,744 - __main__ - INFO - epoch:221 train_loss=0.60467 train_acc=0.64074 val_acc=0.66667 time=0.05078 test_acc=0.68000 
+2021-06-04 09:32:09,795 - __main__ - INFO - epoch:222 train_loss=0.63563 train_acc=0.66049 val_acc=0.66667 time=0.05069 
+2021-06-04 09:32:09,846 - __main__ - INFO - epoch:223 train_loss=0.63010 train_acc=0.64938 val_acc=0.66667 time=0.05077 
+2021-06-04 09:32:09,897 - __main__ - INFO - epoch:224 train_loss=0.61661 train_acc=0.64691 val_acc=0.67778 time=0.05063 
+2021-06-04 09:32:09,949 - __main__ - INFO - epoch:225 train_loss=0.62387 train_acc=0.63210 val_acc=0.67778 time=0.05154 
+2021-06-04 09:32:10,003 - __main__ - INFO - epoch:226 train_loss=0.63182 train_acc=0.63704 val_acc=0.67778 time=0.05053 test_acc=0.70000 
+2021-06-04 09:32:10,053 - __main__ - INFO - epoch:227 train_loss=0.62659 train_acc=0.64568 val_acc=0.66667 time=0.05023 
+2021-06-04 09:32:10,105 - __main__ - INFO - epoch:228 train_loss=0.63076 train_acc=0.64321 val_acc=0.66667 time=0.05179 
+2021-06-04 09:32:10,156 - __main__ - INFO - epoch:229 train_loss=0.61077 train_acc=0.66296 val_acc=0.67778 time=0.05054 
+2021-06-04 09:32:10,207 - __main__ - INFO - epoch:230 train_loss=0.60449 train_acc=0.66790 val_acc=0.67778 time=0.05061 
+2021-06-04 09:32:10,261 - __main__ - INFO - epoch:231 train_loss=0.62287 train_acc=0.63457 val_acc=0.67778 time=0.05082 test_acc=0.68000 
+2021-06-04 09:32:10,312 - __main__ - INFO - epoch:232 train_loss=0.61072 train_acc=0.65679 val_acc=0.67778 time=0.05057 
+2021-06-04 09:32:10,363 - __main__ - INFO - epoch:233 train_loss=0.62584 train_acc=0.65062 val_acc=0.67778 time=0.05076 
+2021-06-04 09:32:10,414 - __main__ - INFO - epoch:234 train_loss=0.62038 train_acc=0.65185 val_acc=0.68889 time=0.05043 
+2021-06-04 09:32:10,465 - __main__ - INFO - epoch:235 train_loss=0.61949 train_acc=0.64444 val_acc=0.67778 time=0.05063 
+2021-06-04 09:32:10,519 - __main__ - INFO - epoch:236 train_loss=0.62027 train_acc=0.64691 val_acc=0.65556 time=0.05056 test_acc=0.68000 
+2021-06-04 09:32:10,569 - __main__ - INFO - epoch:237 train_loss=0.61367 train_acc=0.63580 val_acc=0.66667 time=0.05034 
+2021-06-04 09:32:10,620 - __main__ - INFO - epoch:238 train_loss=0.61886 train_acc=0.64568 val_acc=0.67778 time=0.05042 
+2021-06-04 09:32:10,671 - __main__ - INFO - epoch:239 train_loss=0.62022 train_acc=0.64444 val_acc=0.66667 time=0.05067 
+2021-06-04 09:32:10,722 - __main__ - INFO - epoch:240 train_loss=0.61373 train_acc=0.65309 val_acc=0.66667 time=0.05025 
+2021-06-04 09:32:10,775 - __main__ - INFO - epoch:241 train_loss=0.62704 train_acc=0.63827 val_acc=0.66667 time=0.05044 test_acc=0.71000 
+2021-06-04 09:32:10,826 - __main__ - INFO - epoch:242 train_loss=0.62365 train_acc=0.65432 val_acc=0.68889 time=0.05021 
+2021-06-04 09:32:10,877 - __main__ - INFO - epoch:243 train_loss=0.62385 train_acc=0.64321 val_acc=0.67778 time=0.05068 
+2021-06-04 09:32:10,928 - __main__ - INFO - epoch:244 train_loss=0.61344 train_acc=0.65556 val_acc=0.66667 time=0.05079 
+2021-06-04 09:32:10,979 - __main__ - INFO - epoch:245 train_loss=0.61021 train_acc=0.65185 val_acc=0.67778 time=0.05043 
+2021-06-04 09:32:11,033 - __main__ - INFO - epoch:246 train_loss=0.62052 train_acc=0.65309 val_acc=0.67778 time=0.05064 test_acc=0.69000 
+2021-06-04 09:32:11,084 - __main__ - INFO - epoch:247 train_loss=0.62986 train_acc=0.66420 val_acc=0.68889 time=0.05055 
+2021-06-04 09:32:11,135 - __main__ - INFO - epoch:248 train_loss=0.62018 train_acc=0.63827 val_acc=0.67778 time=0.05049 
+2021-06-04 09:32:11,186 - __main__ - INFO - epoch:249 train_loss=0.62207 train_acc=0.64815 val_acc=0.67778 time=0.05051 
+2021-06-04 09:32:11,237 - __main__ - INFO - epoch:250 train_loss=0.61777 train_acc=0.65185 val_acc=0.67778 time=0.05062 
+2021-06-04 09:32:11,290 - __main__ - INFO - epoch:251 train_loss=0.61330 train_acc=0.65185 val_acc=0.67778 time=0.05023 test_acc=0.69000 
+2021-06-04 09:32:11,342 - __main__ - INFO - epoch:252 train_loss=0.60877 train_acc=0.65062 val_acc=0.67778 time=0.05110 
+2021-06-04 09:32:11,393 - __main__ - INFO - epoch:253 train_loss=0.62564 train_acc=0.63333 val_acc=0.67778 time=0.05052 
+2021-06-04 09:32:11,444 - __main__ - INFO - epoch:254 train_loss=0.61937 train_acc=0.66049 val_acc=0.67778 time=0.05080 
+2021-06-04 09:32:11,495 - __main__ - INFO - epoch:255 train_loss=0.63339 train_acc=0.63457 val_acc=0.66667 time=0.05088 
+2021-06-04 09:32:11,549 - __main__ - INFO - epoch:256 train_loss=0.61756 train_acc=0.67284 val_acc=0.67778 time=0.05062 test_acc=0.70000 
+2021-06-04 09:32:11,600 - __main__ - INFO - epoch:257 train_loss=0.62116 train_acc=0.64198 val_acc=0.66667 time=0.05061 
+2021-06-04 09:32:11,651 - __main__ - INFO - epoch:258 train_loss=0.62096 train_acc=0.63210 val_acc=0.66667 time=0.05059 
+2021-06-04 09:32:11,702 - __main__ - INFO - epoch:259 train_loss=0.62608 train_acc=0.66667 val_acc=0.67778 time=0.05059 
+2021-06-04 09:32:11,754 - __main__ - INFO - epoch:260 train_loss=0.61100 train_acc=0.68025 val_acc=0.66667 time=0.05109 
+2021-06-04 09:32:11,808 - __main__ - INFO - epoch:261 train_loss=0.61325 train_acc=0.65062 val_acc=0.66667 time=0.05109 test_acc=0.70000 
+2021-06-04 09:32:11,859 - __main__ - INFO - epoch:262 train_loss=0.61791 train_acc=0.65926 val_acc=0.65556 time=0.05077 
+2021-06-04 09:32:11,910 - __main__ - INFO - epoch:263 train_loss=0.61109 train_acc=0.67407 val_acc=0.67778 time=0.05088 
+2021-06-04 09:32:11,962 - __main__ - INFO - epoch:264 train_loss=0.61844 train_acc=0.66543 val_acc=0.66667 time=0.05089 
+2021-06-04 09:32:12,013 - __main__ - INFO - epoch:265 train_loss=0.61626 train_acc=0.64568 val_acc=0.66667 time=0.05098 
+2021-06-04 09:32:12,067 - __main__ - INFO - epoch:266 train_loss=0.60934 train_acc=0.64691 val_acc=0.67778 time=0.05065 test_acc=0.69000 
+2021-06-04 09:32:12,118 - __main__ - INFO - epoch:267 train_loss=0.62574 train_acc=0.63086 val_acc=0.67778 time=0.05106 
+2021-06-04 09:32:12,170 - __main__ - INFO - epoch:268 train_loss=0.61765 train_acc=0.66914 val_acc=0.67778 time=0.05133 
+2021-06-04 09:32:12,221 - __main__ - INFO - epoch:269 train_loss=0.61417 train_acc=0.66543 val_acc=0.67778 time=0.05111 
+2021-06-04 09:32:12,273 - __main__ - INFO - epoch:270 train_loss=0.61899 train_acc=0.63580 val_acc=0.66667 time=0.05093 
+2021-06-04 09:32:12,327 - __main__ - INFO - epoch:271 train_loss=0.62603 train_acc=0.65432 val_acc=0.65556 time=0.05086 test_acc=0.70000 
+2021-06-04 09:32:12,378 - __main__ - INFO - epoch:272 train_loss=0.61539 train_acc=0.64938 val_acc=0.67778 time=0.05055 
+2021-06-04 09:32:12,429 - __main__ - INFO - epoch:273 train_loss=0.62379 train_acc=0.63580 val_acc=0.66667 time=0.05068 
+2021-06-04 09:32:12,480 - __main__ - INFO - epoch:274 train_loss=0.59859 train_acc=0.67654 val_acc=0.67778 time=0.05062 
+2021-06-04 09:32:12,531 - __main__ - INFO - epoch:275 train_loss=0.60643 train_acc=0.65309 val_acc=0.66667 time=0.05060 
+2021-06-04 09:32:12,585 - __main__ - INFO - epoch:276 train_loss=0.61903 train_acc=0.64568 val_acc=0.67778 time=0.05097 test_acc=0.69000 
+2021-06-04 09:32:12,636 - __main__ - INFO - epoch:277 train_loss=0.61851 train_acc=0.65556 val_acc=0.67778 time=0.05076 
+2021-06-04 09:32:12,687 - __main__ - INFO - epoch:278 train_loss=0.61927 train_acc=0.65556 val_acc=0.67778 time=0.05049 
+2021-06-04 09:32:12,738 - __main__ - INFO - epoch:279 train_loss=0.62067 train_acc=0.64815 val_acc=0.67778 time=0.05073 
+2021-06-04 09:32:12,789 - __main__ - INFO - epoch:280 train_loss=0.61989 train_acc=0.66049 val_acc=0.67778 time=0.05085 
+2021-06-04 09:32:12,843 - __main__ - INFO - epoch:281 train_loss=0.60586 train_acc=0.66543 val_acc=0.66667 time=0.05084 test_acc=0.69000 
+2021-06-04 09:32:12,894 - __main__ - INFO - epoch:282 train_loss=0.61256 train_acc=0.67531 val_acc=0.67778 time=0.05055 
+2021-06-04 09:32:12,945 - __main__ - INFO - epoch:283 train_loss=0.61599 train_acc=0.66543 val_acc=0.67778 time=0.05073 
+2021-06-04 09:32:12,997 - __main__ - INFO - epoch:284 train_loss=0.61966 train_acc=0.67654 val_acc=0.67778 time=0.05100 
+2021-06-04 09:32:13,048 - __main__ - INFO - epoch:285 train_loss=0.61625 train_acc=0.67037 val_acc=0.67778 time=0.05081 
+2021-06-04 09:32:13,101 - __main__ - INFO - epoch:286 train_loss=0.62711 train_acc=0.65309 val_acc=0.67778 time=0.05020 test_acc=0.69000 
+2021-06-04 09:32:13,152 - __main__ - INFO - epoch:287 train_loss=0.60931 train_acc=0.66543 val_acc=0.67778 time=0.05033 
+2021-06-04 09:32:13,203 - __main__ - INFO - epoch:288 train_loss=0.61716 train_acc=0.65556 val_acc=0.67778 time=0.05060 
+2021-06-04 09:32:13,254 - __main__ - INFO - epoch:289 train_loss=0.61284 train_acc=0.67778 val_acc=0.67778 time=0.05039 
+2021-06-04 09:32:13,305 - __main__ - INFO - epoch:290 train_loss=0.62140 train_acc=0.64691 val_acc=0.67778 time=0.05041 
+2021-06-04 09:32:13,358 - __main__ - INFO - epoch:291 train_loss=0.61308 train_acc=0.67160 val_acc=0.67778 time=0.05030 test_acc=0.69000 
+2021-06-04 09:32:13,409 - __main__ - INFO - epoch:292 train_loss=0.62141 train_acc=0.66296 val_acc=0.65556 time=0.05051 
+2021-06-04 09:32:13,460 - __main__ - INFO - epoch:293 train_loss=0.62305 train_acc=0.63580 val_acc=0.65556 time=0.05051 
+2021-06-04 09:32:13,511 - __main__ - INFO - epoch:294 train_loss=0.62287 train_acc=0.65926 val_acc=0.65556 time=0.05075 
+2021-06-04 09:32:13,562 - __main__ - INFO - epoch:295 train_loss=0.61185 train_acc=0.65185 val_acc=0.67778 time=0.05078 
+2021-06-04 09:32:13,616 - __main__ - INFO - epoch:296 train_loss=0.62875 train_acc=0.64938 val_acc=0.65556 time=0.05074 test_acc=0.68000 
+2021-06-04 09:32:13,667 - __main__ - INFO - epoch:297 train_loss=0.62495 train_acc=0.64198 val_acc=0.65556 time=0.05026 
+2021-06-04 09:32:13,718 - __main__ - INFO - epoch:298 train_loss=0.61990 train_acc=0.64691 val_acc=0.67778 time=0.05053 
+2021-06-04 09:32:13,769 - __main__ - INFO - epoch:299 train_loss=0.62723 train_acc=0.65926 val_acc=0.67778 time=0.05036 
+2021-06-04 09:32:13,819 - __main__ - INFO - epoch:300 train_loss=0.62023 train_acc=0.65062 val_acc=0.67778 time=0.05047 
+2021-06-04 09:32:13,873 - __main__ - INFO - epoch:301 train_loss=0.61299 train_acc=0.66173 val_acc=0.67778 time=0.05077 test_acc=0.69000 
+2021-06-04 09:32:13,924 - __main__ - INFO - epoch:302 train_loss=0.60906 train_acc=0.66667 val_acc=0.67778 time=0.05032 
+2021-06-04 09:32:13,975 - __main__ - INFO - epoch:303 train_loss=0.61923 train_acc=0.65309 val_acc=0.67778 time=0.05073 
+2021-06-04 09:32:14,026 - __main__ - INFO - epoch:304 train_loss=0.61264 train_acc=0.65679 val_acc=0.67778 time=0.05043 
+2021-06-04 09:32:14,077 - __main__ - INFO - epoch:305 train_loss=0.62666 train_acc=0.65556 val_acc=0.67778 time=0.05054 
+2021-06-04 09:32:14,131 - __main__ - INFO - epoch:306 train_loss=0.62276 train_acc=0.66543 val_acc=0.67778 time=0.05043 test_acc=0.69000 
+2021-06-04 09:32:14,182 - __main__ - INFO - epoch:307 train_loss=0.61988 train_acc=0.66543 val_acc=0.65556 time=0.05107 
+2021-06-04 09:32:14,233 - __main__ - INFO - epoch:308 train_loss=0.62342 train_acc=0.64568 val_acc=0.66667 time=0.05070 
+2021-06-04 09:32:14,284 - __main__ - INFO - epoch:309 train_loss=0.61857 train_acc=0.64815 val_acc=0.65556 time=0.05037 
+2021-06-04 09:32:14,335 - __main__ - INFO - epoch:310 train_loss=0.62093 train_acc=0.64691 val_acc=0.66667 time=0.05052 
+2021-06-04 09:32:14,389 - __main__ - INFO - epoch:311 train_loss=0.61906 train_acc=0.64691 val_acc=0.65556 time=0.05088 test_acc=0.69000 
+2021-06-04 09:32:14,440 - __main__ - INFO - epoch:312 train_loss=0.61682 train_acc=0.67284 val_acc=0.65556 time=0.05100 
+2021-06-04 09:32:14,491 - __main__ - INFO - epoch:313 train_loss=0.60711 train_acc=0.66420 val_acc=0.66667 time=0.05070 
+2021-06-04 09:32:14,543 - __main__ - INFO - epoch:314 train_loss=0.61526 train_acc=0.66296 val_acc=0.67778 time=0.05073 
+2021-06-04 09:32:14,594 - __main__ - INFO - epoch:315 train_loss=0.61605 train_acc=0.67531 val_acc=0.67778 time=0.05100 
+2021-06-04 09:32:14,648 - __main__ - INFO - epoch:316 train_loss=0.61861 train_acc=0.65802 val_acc=0.67778 time=0.05086 test_acc=0.69000 
+2021-06-04 09:32:14,699 - __main__ - INFO - epoch:317 train_loss=0.62536 train_acc=0.65062 val_acc=0.67778 time=0.05054 
+2021-06-04 09:32:14,750 - __main__ - INFO - epoch:318 train_loss=0.62204 train_acc=0.66667 val_acc=0.67778 time=0.05068 
+2021-06-04 09:32:14,801 - __main__ - INFO - epoch:319 train_loss=0.62548 train_acc=0.64321 val_acc=0.67778 time=0.05065 
+2021-06-04 09:32:14,852 - __main__ - INFO - epoch:320 train_loss=0.61901 train_acc=0.65802 val_acc=0.67778 time=0.05078 
+2021-06-04 09:32:14,906 - __main__ - INFO - epoch:321 train_loss=0.60969 train_acc=0.64321 val_acc=0.67778 time=0.05081 test_acc=0.69000 
+2021-06-04 09:32:14,957 - __main__ - INFO - epoch:322 train_loss=0.61917 train_acc=0.65679 val_acc=0.67778 time=0.05077 
+2021-06-04 09:32:15,009 - __main__ - INFO - epoch:323 train_loss=0.62504 train_acc=0.64321 val_acc=0.67778 time=0.05082 
+2021-06-04 09:32:15,060 - __main__ - INFO - epoch:324 train_loss=0.60817 train_acc=0.66420 val_acc=0.67778 time=0.05089 
+2021-06-04 09:32:15,111 - __main__ - INFO - epoch:325 train_loss=0.62312 train_acc=0.66173 val_acc=0.67778 time=0.05088 
+2021-06-04 09:32:15,165 - __main__ - INFO - epoch:326 train_loss=0.62165 train_acc=0.64691 val_acc=0.66667 time=0.05084 test_acc=0.68000 
+2021-06-04 09:32:15,216 - __main__ - INFO - epoch:327 train_loss=0.61106 train_acc=0.64321 val_acc=0.66667 time=0.05055 
+2021-06-04 09:32:15,267 - __main__ - INFO - epoch:328 train_loss=0.61950 train_acc=0.65309 val_acc=0.65556 time=0.05059 
+2021-06-04 09:32:15,318 - __main__ - INFO - epoch:329 train_loss=0.61922 train_acc=0.65679 val_acc=0.67778 time=0.05028 
+2021-06-04 09:32:15,369 - __main__ - INFO - epoch:330 train_loss=0.61602 train_acc=0.66790 val_acc=0.67778 time=0.05066 
+2021-06-04 09:32:15,423 - __main__ - INFO - epoch:331 train_loss=0.61765 train_acc=0.66914 val_acc=0.66667 time=0.05049 test_acc=0.69000 
+2021-06-04 09:32:15,473 - __main__ - INFO - epoch:332 train_loss=0.62182 train_acc=0.65062 val_acc=0.67778 time=0.05048 
+2021-06-04 09:32:15,524 - __main__ - INFO - epoch:333 train_loss=0.61662 train_acc=0.65802 val_acc=0.67778 time=0.05052 
+2021-06-04 09:32:15,575 - __main__ - INFO - epoch:334 train_loss=0.61895 train_acc=0.63951 val_acc=0.67778 time=0.05069 
+2021-06-04 09:32:15,626 - __main__ - INFO - epoch:335 train_loss=0.61783 train_acc=0.64321 val_acc=0.67778 time=0.05024 
+2021-06-04 09:32:15,680 - __main__ - INFO - epoch:336 train_loss=0.61864 train_acc=0.63210 val_acc=0.67778 time=0.05037 test_acc=0.69000 
+2021-06-04 09:32:15,730 - __main__ - INFO - epoch:337 train_loss=0.62197 train_acc=0.65062 val_acc=0.67778 time=0.05017 
+2021-06-04 09:32:15,781 - __main__ - INFO - epoch:338 train_loss=0.61802 train_acc=0.63457 val_acc=0.67778 time=0.05066 
+2021-06-04 09:32:15,833 - __main__ - INFO - epoch:339 train_loss=0.62510 train_acc=0.65679 val_acc=0.67778 time=0.05109 
+2021-06-04 09:32:15,884 - __main__ - INFO - epoch:340 train_loss=0.62108 train_acc=0.63210 val_acc=0.67778 time=0.05075 
+2021-06-04 09:32:15,938 - __main__ - INFO - epoch:341 train_loss=0.62568 train_acc=0.63951 val_acc=0.67778 time=0.05091 test_acc=0.69000 
+2021-06-04 09:32:15,989 - __main__ - INFO - epoch:342 train_loss=0.62563 train_acc=0.60741 val_acc=0.67778 time=0.05094 
+2021-06-04 09:32:16,040 - __main__ - INFO - epoch:343 train_loss=0.62788 train_acc=0.63333 val_acc=0.66667 time=0.05077 
+2021-06-04 09:32:16,092 - __main__ - INFO - epoch:344 train_loss=0.63217 train_acc=0.61975 val_acc=0.66667 time=0.05117 
+2021-06-04 09:32:16,143 - __main__ - INFO - epoch:345 train_loss=0.61547 train_acc=0.63210 val_acc=0.67778 time=0.05032 
+2021-06-04 09:32:16,196 - __main__ - INFO - epoch:346 train_loss=0.61796 train_acc=0.64074 val_acc=0.67778 time=0.05023 test_acc=0.69000 
+2021-06-04 09:32:16,247 - __main__ - INFO - epoch:347 train_loss=0.63140 train_acc=0.64444 val_acc=0.67778 time=0.05038 
+2021-06-04 09:32:16,298 - __main__ - INFO - epoch:348 train_loss=0.61798 train_acc=0.64691 val_acc=0.67778 time=0.05042 
+2021-06-04 09:32:16,349 - __main__ - INFO - epoch:349 train_loss=0.61651 train_acc=0.65556 val_acc=0.67778 time=0.05066 
+2021-06-04 09:32:16,400 - __main__ - INFO - epoch:350 train_loss=0.61620 train_acc=0.65679 val_acc=0.67778 time=0.05065 
+2021-06-04 09:32:16,454 - __main__ - INFO - epoch:351 train_loss=0.60260 train_acc=0.66173 val_acc=0.67778 time=0.05076 test_acc=0.69000 
+2021-06-04 09:32:16,505 - __main__ - INFO - epoch:352 train_loss=0.61658 train_acc=0.66049 val_acc=0.67778 time=0.05078 
+2021-06-04 09:32:16,556 - __main__ - INFO - epoch:353 train_loss=0.62626 train_acc=0.65309 val_acc=0.67778 time=0.05085 
+2021-06-04 09:32:16,607 - __main__ - INFO - epoch:354 train_loss=0.62065 train_acc=0.65679 val_acc=0.67778 time=0.05080 
+2021-06-04 09:32:16,658 - __main__ - INFO - epoch:355 train_loss=0.62461 train_acc=0.65802 val_acc=0.67778 time=0.05067 
+2021-06-04 09:32:16,712 - __main__ - INFO - epoch:356 train_loss=0.63787 train_acc=0.65802 val_acc=0.67778 time=0.05046 test_acc=0.69000 
+2021-06-04 09:32:16,763 - __main__ - INFO - epoch:357 train_loss=0.61562 train_acc=0.66667 val_acc=0.66667 time=0.05049 
+2021-06-04 09:32:16,814 - __main__ - INFO - epoch:358 train_loss=0.62505 train_acc=0.65679 val_acc=0.66667 time=0.05035 
+2021-06-04 09:32:16,864 - __main__ - INFO - epoch:359 train_loss=0.61064 train_acc=0.63457 val_acc=0.65556 time=0.05016 
+2021-06-04 09:32:16,915 - __main__ - INFO - epoch:360 train_loss=0.61328 train_acc=0.64074 val_acc=0.66667 time=0.05080 
+2021-06-04 09:32:16,969 - __main__ - INFO - epoch:361 train_loss=0.61891 train_acc=0.64074 val_acc=0.65556 time=0.05060 test_acc=0.69000 
+2021-06-04 09:32:17,020 - __main__ - INFO - epoch:362 train_loss=0.61847 train_acc=0.64815 val_acc=0.66667 time=0.05062 
+2021-06-04 09:32:17,071 - __main__ - INFO - epoch:363 train_loss=0.62186 train_acc=0.66420 val_acc=0.67778 time=0.05046 
+2021-06-04 09:32:17,122 - __main__ - INFO - epoch:364 train_loss=0.62885 train_acc=0.64321 val_acc=0.67778 time=0.05041 
+2021-06-04 09:32:17,173 - __main__ - INFO - epoch:365 train_loss=0.61052 train_acc=0.65309 val_acc=0.67778 time=0.05068 
+2021-06-04 09:32:17,227 - __main__ - INFO - epoch:366 train_loss=0.60959 train_acc=0.67654 val_acc=0.67778 time=0.05045 test_acc=0.69000 
+2021-06-04 09:32:17,278 - __main__ - INFO - epoch:367 train_loss=0.62044 train_acc=0.64444 val_acc=0.67778 time=0.05097 
+2021-06-04 09:32:17,329 - __main__ - INFO - epoch:368 train_loss=0.61777 train_acc=0.67284 val_acc=0.67778 time=0.05082 
+2021-06-04 09:32:17,381 - __main__ - INFO - epoch:369 train_loss=0.62260 train_acc=0.66296 val_acc=0.67778 time=0.05104 
+2021-06-04 09:32:17,432 - __main__ - INFO - epoch:370 train_loss=0.62077 train_acc=0.65309 val_acc=0.67778 time=0.05097 
+2021-06-04 09:32:17,486 - __main__ - INFO - epoch:371 train_loss=0.62189 train_acc=0.65556 val_acc=0.67778 time=0.05088 test_acc=0.69000 
+2021-06-04 09:32:17,537 - __main__ - INFO - epoch:372 train_loss=0.62173 train_acc=0.66543 val_acc=0.67778 time=0.05087 
+2021-06-04 09:32:17,588 - __main__ - INFO - epoch:373 train_loss=0.61967 train_acc=0.66790 val_acc=0.67778 time=0.05042 
+2021-06-04 09:32:17,639 - __main__ - INFO - epoch:374 train_loss=0.62210 train_acc=0.64815 val_acc=0.67778 time=0.05032 
+2021-06-04 09:32:17,689 - __main__ - INFO - epoch:375 train_loss=0.61788 train_acc=0.66667 val_acc=0.66667 time=0.05029 
+2021-06-04 09:32:17,743 - __main__ - INFO - epoch:376 train_loss=0.62264 train_acc=0.64321 val_acc=0.67778 time=0.05038 test_acc=0.69000 
+2021-06-04 09:32:17,794 - __main__ - INFO - epoch:377 train_loss=0.61598 train_acc=0.65432 val_acc=0.66667 time=0.05060 
+2021-06-04 09:32:17,845 - __main__ - INFO - epoch:378 train_loss=0.62722 train_acc=0.65309 val_acc=0.67778 time=0.05057 
+2021-06-04 09:32:17,896 - __main__ - INFO - epoch:379 train_loss=0.61482 train_acc=0.67531 val_acc=0.67778 time=0.05031 
+2021-06-04 09:32:17,947 - __main__ - INFO - epoch:380 train_loss=0.60850 train_acc=0.65679 val_acc=0.66667 time=0.05061 
+2021-06-04 09:32:18,000 - __main__ - INFO - epoch:381 train_loss=0.61676 train_acc=0.64444 val_acc=0.66667 time=0.05028 test_acc=0.68000 
+2021-06-04 09:32:18,051 - __main__ - INFO - epoch:382 train_loss=0.61226 train_acc=0.65802 val_acc=0.67778 time=0.05033 
+2021-06-04 09:32:18,102 - __main__ - INFO - epoch:383 train_loss=0.63855 train_acc=0.65185 val_acc=0.67778 time=0.05114 
+2021-06-04 09:32:18,153 - __main__ - INFO - epoch:384 train_loss=0.61787 train_acc=0.67037 val_acc=0.67778 time=0.05064 
+2021-06-04 09:32:18,204 - __main__ - INFO - epoch:385 train_loss=0.61408 train_acc=0.67160 val_acc=0.67778 time=0.05037 
+2021-06-04 09:32:18,259 - __main__ - INFO - epoch:386 train_loss=0.62262 train_acc=0.64444 val_acc=0.67778 time=0.05109 test_acc=0.69000 
+2021-06-04 09:32:18,310 - __main__ - INFO - epoch:387 train_loss=0.61072 train_acc=0.64691 val_acc=0.67778 time=0.05105 
+2021-06-04 09:32:18,361 - __main__ - INFO - epoch:388 train_loss=0.62111 train_acc=0.66667 val_acc=0.67778 time=0.05098 
+2021-06-04 09:32:18,412 - __main__ - INFO - epoch:389 train_loss=0.62107 train_acc=0.65309 val_acc=0.67778 time=0.05044 
+2021-06-04 09:32:18,463 - __main__ - INFO - epoch:390 train_loss=0.62295 train_acc=0.66420 val_acc=0.67778 time=0.05053 
+2021-06-04 09:32:18,517 - __main__ - INFO - epoch:391 train_loss=0.62997 train_acc=0.65679 val_acc=0.67778 time=0.05067 test_acc=0.69000 
+2021-06-04 09:32:18,569 - __main__ - INFO - epoch:392 train_loss=0.63636 train_acc=0.64815 val_acc=0.67778 time=0.05118 
+2021-06-04 09:32:18,620 - __main__ - INFO - epoch:393 train_loss=0.61493 train_acc=0.67160 val_acc=0.65556 time=0.05105 
+2021-06-04 09:32:18,671 - __main__ - INFO - epoch:394 train_loss=0.60940 train_acc=0.66173 val_acc=0.66667 time=0.05091 
+2021-06-04 09:32:18,723 - __main__ - INFO - epoch:395 train_loss=0.61547 train_acc=0.64691 val_acc=0.66667 time=0.05122 
+2021-06-04 09:32:18,777 - __main__ - INFO - epoch:396 train_loss=0.62816 train_acc=0.64074 val_acc=0.67778 time=0.05103 test_acc=0.69000 
+2021-06-04 09:32:18,828 - __main__ - INFO - epoch:397 train_loss=0.61671 train_acc=0.67037 val_acc=0.67778 time=0.05078 
+2021-06-04 09:32:18,880 - __main__ - INFO - epoch:398 train_loss=0.61357 train_acc=0.67407 val_acc=0.67778 time=0.05066 
+2021-06-04 09:32:18,931 - __main__ - INFO - epoch:399 train_loss=0.63030 train_acc=0.66914 val_acc=0.67778 time=0.05103 
+2021-06-04 09:32:18,982 - __main__ - INFO - epoch:400 train_loss=0.62987 train_acc=0.65062 val_acc=0.67778 time=0.05079 
+2021-06-04 09:32:18,983 - __main__ - INFO - best_val_acc=0.74444
+2021-06-04 09:32:18,983 - __main__ - INFO - best_test_acc=0.76000
+2021-06-04 09:32:18,990 - __main__ - INFO - best val model on test dataset acc=0.75000
