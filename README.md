@@ -1,5 +1,5 @@
 # KerGNNs: Interpretable Graph Neural Networks with Graph Kernels
-This repository is the official PyTorch implementation of "KerGNNs: Interpretable Graph Neural Networks with Graph Kernels", Aosong Feng, Chenyu You, Shiqiang Wang, Leandros Tassiulas, AAAI 2022.
+This repository is the official PyTorch implementation of "KerGNNs: Interpretable Graph Neural Networks with Graph Kernels", Aosong Feng, Chenyu You, Shiqiang Wang, Leandros Tassiulas, AAAI 2022 [link] (https://arxiv.org/abs/2201.00491).
 
 
 ## Installation
